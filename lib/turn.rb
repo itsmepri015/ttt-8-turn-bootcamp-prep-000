@@ -8,6 +8,14 @@ def display_board(board)
   
 end
 
+def input_to_index(input_to_index)
+  
+  input_to_index = input_to_index.to_i - 1
+  
+  return input_to_index
+  
+end
+
 
 def position_taken?(board,index)
   
