@@ -51,10 +51,13 @@ if index.between?(0, 8) && position_taken?(board, index) == false
 end
 
 
-def move(board,index,charac="x")
+def move(board, index, value = "X")
   
-  board[index]=='X'
+  if(index > -1 && index < 9)
+    board[index] = value;
+  end
   
+  return board
 end
 
 def turn(board)
