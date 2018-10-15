@@ -11,9 +11,9 @@ turn(board)
 
 puts "Please enter 1-9:
 input= gets.strip
- input =input.to_i-1
+ index =input.to_i-1
 convert input to index
-if index is valid
+valid_move?(board, index)
   make the move for index
  display_board(board)
 else
