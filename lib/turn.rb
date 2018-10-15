@@ -32,6 +32,14 @@ end
 end
 
 
+def move(board, index, value = "X")
+  
+  if(index > -1 && index < 9)
+    board[index] = value;
+  end
+  
+  return board
+end
 
 def valid_move?(board, index)
   
@@ -51,14 +59,7 @@ if index.between?(0, 8) && position_taken?(board, index) == false
 end
 
 
-def move(board, index, value = "X")
-  
-  if(index > -1 && index < 9)
-    board[index] = value;
-  end
-  
-  return board
-end
+
 
 def turn(board)
   puts "Please enter 1-9:"
