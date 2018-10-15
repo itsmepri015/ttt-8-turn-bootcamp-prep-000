@@ -13,20 +13,3 @@ board = move(board, index)
 display_board(board)
  
  
-move(board, 4, "X")
-move(board, 0, "O")
-display_board(board)
-move(board, 1, "X")
-
-turn(board)
-
-puts "Please enter 1-9:
-input= gets.strip
- index =input.to_i-1
-convert input to index
-valid_move?(board, index)
- move((board, index)
- display_board(board)
-else
-  puts "Please enter 1-9:
-end
