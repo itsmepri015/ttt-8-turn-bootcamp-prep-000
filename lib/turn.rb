@@ -45,6 +45,8 @@ end
 
 def move(board,index,charac="x")
   
+  board[index]=='X'
+  
 end
 
 def turn(board)
